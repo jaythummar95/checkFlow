@@ -50,12 +50,12 @@ const App = () => {
         }}>
 
           <Stack.Screen
-            name="Internationalization"
-            component={Internationalization} />
-
-          <Stack.Screen
             name="RTLCheck"
             component={RTLCheck} />
+
+          <Stack.Screen
+            name="Internationalization"
+            component={Internationalization} />
 
 
 
