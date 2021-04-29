@@ -15,9 +15,13 @@ jobs:
       uses: actions/checkout@v2
     - uses: actions/setup-node@master
     
-    - name: Run lint test
+    - name: Install node modules
       run: |
-        yarn lint
+        yarn install
+    
+#     - name: Run lint test
+#       run: |
+#         yarn lint
         
     - name: bundle
       run: |
