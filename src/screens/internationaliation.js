@@ -121,7 +121,7 @@ function Internationalization(props) {
                         <View style={styles.container}>
                             {renderHeader()}
                             {renderLanguageList()}
-                            {renderListOfFruits()}
+                            {/* {renderListOfFruits()} */}
                             {renderSpace()}
                             {renderNextButton()}
                         </View>
