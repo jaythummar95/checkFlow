@@ -19,32 +19,11 @@ jobs:
     - name: Install node modules
       run: |
         yarn install
-        
-    - name: Run test
-      run: |
-        yarn test
-        
+                
     - name: Run lint test
       run: |
         yarn test
-      
-    - name: Cache Gradle Wrapper
-      uses: actions/cache@v2
-      with:
-        path: ~/.gradle/wrapper
-        key: ${{ runner.os }}-gradle-wrapper-${{ hashFiles('gradle/wrapper/gradle-wrapper.properties') }}
-  
-    - name: Cache Gradle Dependencies
-      uses: actions/cache@v2
-      with:
-        path: ~/.gradle/caches
-        key: ${{ runner.os }}-gradle-caches-${{ hashFiles('gradle/wrapper/gradle-wrapper.properties') }}
-        restore-keys: |
-          ${{ runner.os }}-gradle-caches-
           
-    - name: Make Gradlew Executable
-      run: cd android && chmod +x ./gradlew 
-      
     - name: Build Android App Bundle
       run: |
         cd android && ./gradlew assembleDebug
