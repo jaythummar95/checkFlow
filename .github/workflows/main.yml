@@ -18,6 +18,10 @@ jobs:
     - name: Run lint test
       run: |
         yarn lint
+        
+    - name: bundle
+      run: |
+        yarn loadscript
           
     - name: Build Android App Bundle
       run: |
