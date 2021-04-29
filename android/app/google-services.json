@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "478458588547",
+    "project_id": "obfuscatingdemo",
+    "storage_bucket": "obfuscatingdemo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:478458588547:android:b0ddcb543ef514d7781ab6",
+        "android_client_info": {
+          "package_name": "com.obfuscatingdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "478458588547-mlu18mmoguc8qu82e0etp31cprmlpbg7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuHdVl4CZYeeJrM0DhsomN6AbNSXv7UI0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "478458588547-mlu18mmoguc8qu82e0etp31cprmlpbg7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

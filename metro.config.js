@@ -13,6 +13,7 @@ module.exports = {
         inlineRequires: true,
       },
     }),
-    babelTransformerPath: require.resolve("./transformer")
+    //  babelTransformerPath: require.resolve("./transformer")
   },
+
 };
