@@ -28,6 +28,9 @@ jobs:
       with:
         java-version: 1.8
         
+    - name: Make Gradlew Executable
+      run: cd android && chmod +x ./gradlew
+        
     - name: Build Android App Bundle
       run: |
         cd android && ./gradlew assembleDebug
