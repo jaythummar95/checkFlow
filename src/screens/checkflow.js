@@ -10,6 +10,7 @@ function CheckFlow() {
                 <Text>This one to check PR in main branch</Text>
                 <Text>This one to check PR in main branch</Text>
                 <Text>This one to check PR in main branch</Text>
+                <Text>This one to check PR in main branch</Text>
             </View>
         )
     }
