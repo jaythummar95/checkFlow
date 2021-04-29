@@ -13,7 +13,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage'
 import I18n from './src/I18n'
 import Internationalization from './src/screens/internationaliation';
 import RTLCheck from './src/screens/rtlCheck';
-import CheckFlow from './src/screens/CheckFlow';
+import CheckFlow from './src/screens/checkFlow';
 
 
 const Stack = createStackNavigator();
