@@ -48,13 +48,15 @@ const App = () => {
         <Stack.Navigator screenOptions={{
           headerShown: false
         }}>
-          <Stack.Screen
-            name="RTLCheck"
-            component={RTLCheck} />
 
           <Stack.Screen
             name="Internationalization"
             component={Internationalization} />
+
+          <Stack.Screen
+            name="RTLCheck"
+            component={RTLCheck} />
+
 
 
         </Stack.Navigator>
