@@ -13,6 +13,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage'
 import I18n from './src/I18n'
 import Internationalization from './src/screens/internationaliation';
 import RTLCheck from './src/screens/rtlCheck';
+import CheckFlow from './src/screens/CheckFlow';
 
 
 const Stack = createStackNavigator();
@@ -45,19 +46,23 @@ const App = () => {
   return (
     selectedLanguage ?
       <NavigationContainer>
-      <Stack.Navigator screenOptions={{
-        headerShown: false
-      }}>
-        <Stack.Screen
-          name="RTLCheck"
+        <Stack.Navigator screenOptions={{
+          headerShown: false
+        }}>
+          <Stack.Screen
+            name="RTLCheck"
             component={RTLCheck} />
-          
-        <Stack.Screen
-          name="Internationalization"
+
+          <Stack.Screen
+            name="Internationalization"
             component={Internationalization} />
-          
-      </Stack.Navigator>
-    </NavigationContainer> : null
+
+          <Stack.Screen
+            name="CheckFlow"
+            component={CheckFlow} />
+
+        </Stack.Navigator>
+      </NavigationContainer> : null
   );
 };
 
