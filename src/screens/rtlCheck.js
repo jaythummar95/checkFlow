@@ -37,6 +37,7 @@ function RTLCheck(props) {
         "https://cdn.pixabay.com/photo/2014/12/23/07/40/hulk-578088__340.jpg",
         "https://cdn.pixabay.com/photo/2019/03/21/02/51/deadpool-4070071__340.jpg",
         "https://cdn.pixabay.com/photo/2015/03/11/01/33/hulk-667988__340.jpg",
+        "https://cdn.pixabay.com/photo/2015/03/11/01/33/hulk-667988__340.jpg",
     ]
 
     const renderHeader = () => {
