@@ -1,19 +1,19 @@
-import React, { useEffect, useState } from 'react';
-import { View, Text, StyleSheet, SafeAreaView, FlatList, StatusBar, I18nManager, Image, TouchableOpacity } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import React, { useEffect, useState } from 'react'
+import {
+    I18nManager, SafeAreaView, StatusBar, StyleSheet, Text, TouchableOpacity, View,
+} from 'react-native'
+import RNRestart from 'react-native-restart'
 import I18n from '../I18n'
-import AsyncStorage from '@react-native-async-storage/async-storage'
-import RNRestart from 'react-native-restart';
 
 function Internationalization(props) {
-
     const [selectedLanguage, setSelectedLanguage] = useState('')
-
-    useEffect(() => {
+  useEffect(() => {
 
         AsyncStorage.getItem('lng')
-            .then(resp => {
+            .then((resp) => {
                 if (resp) {
-                    setLanguage(resp, false)
+          setLanguage(resp, false)
                 } else {
                     setLanguage('en', false)
                 }
