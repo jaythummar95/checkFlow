@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ObfuscatingDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/ObfuscatingDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ObfuscatingDemo.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ObfuscatingDemo.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2024329896/ObfuscatingDemo.react-native-fs.iml" filepath="$PROJECT_DIR$/.idea/modules/2024329896/ObfuscatingDemo.react-native-fs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1735785651/ObfuscatingDemo.react-native-ssl-pinning.iml" filepath="$PROJECT_DIR$/.idea/modules/-1735785651/ObfuscatingDemo.react-native-ssl-pinning.iml" />
+    </modules>
+  </component>
+</project>
