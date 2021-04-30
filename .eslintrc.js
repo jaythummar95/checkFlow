@@ -1,47 +1,63 @@
+// module.exports = {
+//   root: true,
+//   extends: '@react-native-community',
+// };
 module.exports = {
-  "extends": "airbnb",
-  "rules": {
-    "arrow-body-style": "warn",
-    "react-native/no-unused-styles": 2,
-    "react-native/split-platform-components": 0,
-    "react-native/no-inline-styles": 0,
-    "react-native/no-color-literals": 0,
-    "semi": [2, "never"],
-    "class-methods-use-this": 0,
-    "react/jsx-filename-extension": [
-      1,
+  root: true,
+  // extends: '@react-native-community',
+  env: {
+    browser: true,
+    es6: true,
+    jest: true,
+    node: true,
+    amd: true,
+  },
+  extends: ['airbnb', 'prettier', 'prettier/react'],
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
+  },
+  parser: 'babel-eslint',
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 2018,
+    sourceType: 'module',
+  },
+  plugins: ['react', 'prettier'],
+  rules: {
+    'no-console': 'off',
+    'jsx-a11y/anchor-is-valid': 'off',
+    'no-script-url': 'off',
+    'react/jsx-props-no-spreading': 'off',
+    'react/jsx-curly-brace-presence': 'off',
+    'no-unused-expressions': 'off',
+    'react/no-did-update-set-state': 'off',
+    'import/prefer-default-export': 'off',
+    'react/no-unescaped-entities': 'off',
+    'react/state-in-constructor': 'off',
+    'arrow-body-style': ['error', 'as-needed'],
+    'global-require': 0,
+    'jsx-a11y/label-has-associated-control': [
+      2,
       {
-        "extensions": [".js", ".jsx"]
-      }
+        components: ['Label'],
+        required: {
+          some: ['nesting', 'id'],
+        },
+        allowChildren: false,
+      },
     ],
-    "react/prefer-stateless-function": [
-      0,
+    // 'no-unused-vars': ['error', { argsIgnorePattern: '_' }],
+    // 'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'prettier/prettier': [
+      'error',
       {
-        "ignorePureComponents": 1
-      }
+        semi: true,
+        singleQuote: true,
+        trailingComma: 'all',
+      },
     ],
-    "react/forbid-prop-types": 0,
-    "no-underscore-dangle": 0,
-    "no-restricted-properties": 0,
-    "no-plusplus": 0,
-    "no-alert": 0,
-    "max-len": 0,
-    "global-require": 0,
-    "react/jsx-no-bind": 0,
-    "react/prefer-es6-class": 0,
-    "react/react-in-jsx-scope": 0,
-    "space-before-function-paren": 0,
-    "linebreak-style": 0,
-    "react/jsx-quotes": 0,
-    "react/no-array-index-key": 0,
-    "react/jsx-boolean-value": 0,
-    "no-nested-ternary": 0,
-    "func-names": 0,
-    "no-bitwise": 0,
-    "no-await-in-loop": 0,
-    "jsx-quotes": [2, "prefer-double"],
-    "eqeqeq": 0,
-    "no-return-await": 0,
-    "camelcase": 0
-  }
+  },
 };

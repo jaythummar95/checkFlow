@@ -13,10 +13,10 @@ import AsyncStorage from '@react-native-async-storage/async-storage'
 import I18n from './src/I18n'
 import Internationalization from './src/screens/internationaliation';
 import RTLCheck from './src/screens/rtlCheck';
+import { View } from 'react-native';
 
 
 const Stack = createStackNavigator();
-
 
 const App = () => {
 
@@ -57,11 +57,9 @@ const App = () => {
             name="Internationalization"
             component={Internationalization} />
 
-
-
         </Stack.Navigator>
-      </NavigationContainer> : null
-  );
+      </NavigationContainer>
+    )
 };
 
 
