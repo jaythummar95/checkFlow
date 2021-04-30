@@ -40,9 +40,30 @@ jobs:
     - name: Build Android App Bundle
       run: |
         cd android && ./gradlew assembleDebug
-     
-    - name: Upload APK
-      uses: actions/upload-artifact@v1
+  
+    - name: Build Android apk (debug)
+#       run: ./gradlew assembleDebug -Dorg.gradle.logging.level=info
+      run: ./gradlew assembleDebug
+#         run: |
+#           cd ./android && ./gradlew assembleDebug
+      working-directory: android
+    - name: Upload Artifact Debug
+      uses: actions/upload-artifact@v2
       with:
-          name: app
+          name: ${{ github.event.head_commit.message }}-debug
           path: '**/*.apk'
+#           name: app-release.apk
+#           path: android/app/build/outputs/apk/release/
+    - name: Build Android ( Release ) 
+      run: |
+          cd android && ./gradlew assembleRelease
+    - name: Upload Artifact Release Android
+      uses: actions/upload-artifact@v2
+      with:
+          name: ${{ github.event.commits[0].message }}-release
+          path: '**/*.apk'
+#     - name: Upload APK
+#       uses: actions/upload-artifact@v1
+#       with:
+#           name: app
+#           path: '**/*.apk'
