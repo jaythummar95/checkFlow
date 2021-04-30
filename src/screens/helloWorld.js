@@ -5,7 +5,7 @@ class HelloWorld extends Component {
   render() {
     return (
       <View>
-        <Text>Hi World...</Text>
+        <Text>Hi... World...</Text>
       </View>
     )
   }
