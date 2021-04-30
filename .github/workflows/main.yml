@@ -54,14 +54,14 @@ jobs:
           path: '**/*.apk'
 #           name: app-release.apk
 #           path: android/app/build/outputs/apk/release/
-    - name: Build Android ( Release ) 
-      run: |
-          cd android && ./gradlew assembleRelease
-    - name: Upload Artifact Release Android
-      uses: actions/upload-artifact@v2
-      with:
-          name: ${{ github.event.commits[0].message }}-release
-          path: '**/*.apk'
+#     - name: Build Android ( Release ) 
+#       run: |
+#           cd android && ./gradlew assembleRelease
+#     - name: Upload Artifact Release Android
+#       uses: actions/upload-artifact@v2
+#       with:
+#           name: ${{ github.event.commits[0].message }}-release
+#           path: '**/*.apk'
 #     - name: Upload APK
 #       uses: actions/upload-artifact@v1
 #       with:
