@@ -4,7 +4,18 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/ObfuscatingDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/ObfuscatingDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ObfuscatingDemo.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ObfuscatingDemo.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/700929808/ObfuscatingDemo.react-native-async-storage_async-storage.iml" filepath="$PROJECT_DIR$/.idea/modules/700929808/ObfuscatingDemo.react-native-async-storage_async-storage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-997517876/ObfuscatingDemo.react-native-community_masked-view.iml" filepath="$PROJECT_DIR$/.idea/modules/-997517876/ObfuscatingDemo.react-native-community_masked-view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1209797166/ObfuscatingDemo.react-native-firebase_app.iml" filepath="$PROJECT_DIR$/.idea/modules/1209797166/ObfuscatingDemo.react-native-firebase_app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1056996945/ObfuscatingDemo.react-native-firebase_messaging.iml" filepath="$PROJECT_DIR$/.idea/modules/1056996945/ObfuscatingDemo.react-native-firebase_messaging.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/2024329896/ObfuscatingDemo.react-native-fs.iml" filepath="$PROJECT_DIR$/.idea/modules/2024329896/ObfuscatingDemo.react-native-fs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/778067083/ObfuscatingDemo.react-native-gesture-handler.iml" filepath="$PROJECT_DIR$/.idea/modules/778067083/ObfuscatingDemo.react-native-gesture-handler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1922732999/ObfuscatingDemo.react-native-i18n.iml" filepath="$PROJECT_DIR$/.idea/modules/-1922732999/ObfuscatingDemo.react-native-i18n.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/54262083/ObfuscatingDemo.react-native-push-notification.iml" filepath="$PROJECT_DIR$/.idea/modules/54262083/ObfuscatingDemo.react-native-push-notification.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1718004047/ObfuscatingDemo.react-native-reanimated.iml" filepath="$PROJECT_DIR$/.idea/modules/-1718004047/ObfuscatingDemo.react-native-reanimated.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1578604500/ObfuscatingDemo.react-native-restart.iml" filepath="$PROJECT_DIR$/.idea/modules/1578604500/ObfuscatingDemo.react-native-restart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1049525812/ObfuscatingDemo.react-native-safe-area-context.iml" filepath="$PROJECT_DIR$/.idea/modules/1049525812/ObfuscatingDemo.react-native-safe-area-context.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2139861172/ObfuscatingDemo.react-native-screens.iml" filepath="$PROJECT_DIR$/.idea/modules/-2139861172/ObfuscatingDemo.react-native-screens.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1735785651/ObfuscatingDemo.react-native-ssl-pinning.iml" filepath="$PROJECT_DIR$/.idea/modules/-1735785651/ObfuscatingDemo.react-native-ssl-pinning.iml" />
     </modules>
   </component>

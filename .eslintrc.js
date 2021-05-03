@@ -50,7 +50,7 @@ module.exports = {
       },
     ],
     // 'no-unused-vars': ['error', { argsIgnorePattern: '_' }],
-    // 'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'prettier/prettier': [
       'error',
       {
