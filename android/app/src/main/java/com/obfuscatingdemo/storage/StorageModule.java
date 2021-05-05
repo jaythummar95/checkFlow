@@ -23,11 +23,13 @@ public class StorageModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public void setItem(String key, String value) {
+        key = AESHelper.encryption(key);
         MainApplication.storagePreferance.storeDataIntoPreFerance(key, value);
     }
 
     @ReactMethod
     public void getItem(String key, Callback callback) {
+        key = AESHelper.encryption(key);
         callback.invoke(MainApplication.storagePreferance.getValueFromPreferance(key));
     }
 }
