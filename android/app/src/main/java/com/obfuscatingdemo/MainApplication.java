@@ -11,11 +11,15 @@ import com.facebook.react.ReactPackage;
 import com.facebook.soloader.SoLoader;
 import com.obfuscatingdemo.currentdate.CurrentDatePackage;
 import com.obfuscatingdemo.jokes.JokesPackage;
+import com.obfuscatingdemo.storage.StoragePackage;
+import com.obfuscatingdemo.storage.StoragePreferance;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 
 public class MainApplication extends Application implements ReactApplication {
+
+    public static StoragePreferance storagePreferance;
 
     private final ReactNativeHost mReactNativeHost =
             new ReactNativeHost(this) {
@@ -32,6 +36,7 @@ public class MainApplication extends Application implements ReactApplication {
                     // packages.add(new MyReactNativePackage());
                     packages.add(new CurrentDatePackage());
                     packages.add(new JokesPackage());
+                    packages.add(new StoragePackage());
                     return packages;
                 }
 
@@ -51,6 +56,7 @@ public class MainApplication extends Application implements ReactApplication {
         super.onCreate();
         SoLoader.init(this, /* native exopackage */ false);
         initializeFlipper(this, getReactNativeHost().getReactInstanceManager());
+        storagePreferance = new StoragePreferance(getApplicationContext());
     }
 
     /**
@@ -83,4 +89,5 @@ public class MainApplication extends Application implements ReactApplication {
             }
         }
     }
+
 }

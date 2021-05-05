@@ -15,6 +15,7 @@ import I18n from './src/I18n';
 import Internationalization from './src/screens/internationaliation';
 import RTLCheck from './src/screens/rtlCheck';
 import NativeModuleTest from './src/screens/nativeModuleTest';
+import StorageCheck from './src/screens/storageCheck';
 
 const Stack = createStackNavigator();
 
@@ -43,6 +44,7 @@ const App = () => {
         screenOptions={{
           headerShown: false,
         }}>
+        <Stack.Screen name="StorageCheck" component={StorageCheck} />
         <Stack.Screen name="NativeModuleTest" component={NativeModuleTest} />
         <Stack.Screen name="RTLCheck" component={RTLCheck} />
         <Stack.Screen
